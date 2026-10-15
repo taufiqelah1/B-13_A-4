@@ -76,3 +76,36 @@ function showTab(tabName) {
         document.getElementById("empty-message").style.display = "none";
     }
 }
+
+function updateCounts() {
+    let cards = document.querySelectorAll(".job-card");
+
+    let total = cards.length;
+    let interview = 0;
+    let rejected = 0;
+
+    for (let i = 0; i < cards.length; i++) {
+        let status = cards[i].querySelector(".status").innerText;
+
+        if (status === "Interview") {
+            interview++;
+        } else if (status === "Rejected") {
+            rejected++;
+        }
+    }
+
+    document.getElementById("total-count").innerText = total;
+    document.getElementById("interview-count").innerText = interview;
+    document.getElementById("rejected-count").innerText = rejected;
+}
+function deleteJob(jobId) {
+    let card = document.getElementById(jobId);
+
+    card.remove();
+
+    updateCounts();
+
+    showTab(currentTab);
+}
+updateCounts();
+showTab("All");
