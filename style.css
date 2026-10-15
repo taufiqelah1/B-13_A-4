@@ -70,3 +70,149 @@ hr {
     color: #64748b;
 }
 
+button {
+    padding: 10px 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+    background-color: white;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+}
+
+button:focus-visible {
+    outline: 3px solid #2563eb;
+    outline-offset: 3px;
+}
+
+/* Filter buttons */
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0 20px;
+}
+
+.active {
+    background-color: #2563eb;
+    color: white;
+    border-color: #2563eb;
+}
+
+.job-card {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+}
+
+.job-card h3 {
+    margin-top: 0;
+    margin-right: 80px;
+    font-size: 20px;
+}
+
+.position {
+    color: #64748b;
+}
+
+.details {
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.status {
+    display: inline-block;
+    background-color: #eef2ff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.description {
+    color: #475569;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+.interview-button {
+    color: #15803d;
+    border-color: #15803d;
+    margin-right: 5px;
+}
+
+.rejected-button {
+    color: #dc2626;
+    border-color: #dc2626;
+}
+
+.delete-button {
+    float: right;
+    color: #64748b;
+    padding: 8px 12px;
+}
+
+.delete-button:hover {
+    background-color: #fee2e2;
+}
+
+#empty-message {
+    display: none;
+    text-align: center;
+    padding: 60px 20px;
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+}
+
+#empty-message img {
+    width: 100px;
+}
+
+#empty-message p {
+    color: #64748b;
+}
+@media screen and (max-width: 600px) {
+    main {
+        margin: 25px auto;
+        padding: 0 15px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .dashboard {
+        gap: 8px;
+    }
+
+    .dashboard-card {
+        padding: 15px 10px;
+    }
+
+    .dashboard-card p {
+        font-size: 13px;
+    }
+
+    .dashboard-card h2 {
+        font-size: 24px;
+    }
+
+    .section-heading h2 {
+        font-size: 20px;
+    }
+
+    .tabs button {
+        flex: 1;
+        padding: 10px;
+    }
+
+    .job-card {
+        padding: 18px;
+    }
+
+    .job-card h3 {
+        font-size: 18px;
+    }
+}
